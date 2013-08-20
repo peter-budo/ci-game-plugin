@@ -11,6 +11,7 @@ import hudson.plugins.cigame.model.RuleSet;
 import hudson.plugins.cigame.rules.build.BuildRuleSet;
 import hudson.plugins.cigame.rules.plugins.checkstyle.CheckstyleRuleSet;
 import hudson.plugins.cigame.rules.plugins.findbugs.FindBugsRuleSet;
+import hudson.plugins.cigame.rules.plugins.lint.LintRuleSet;
 import hudson.plugins.cigame.rules.plugins.opentasks.OpenTasksRuleSet;
 import hudson.plugins.cigame.rules.plugins.pmd.PmdRuleSet;
 import hudson.plugins.cigame.rules.plugins.violation.ViolationsRuleSet;
@@ -50,6 +51,7 @@ public class GameDescriptor extends BuildStepDescriptor<Publisher> {
             addRuleSetIfAvailable(rulebook, new FindBugsRuleSet());
             addRuleSetIfAvailable(rulebook, new WarningsRuleSet());
             addRuleSetIfAvailable(rulebook, new CheckstyleRuleSet());
+            addRuleSetIfAvailable(rulebook, new LintRuleSet());
         }
         return rulebook;
     }

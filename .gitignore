@@ -2,3 +2,10 @@
 /.settings
 /.classpath
 /.project
+
+# IDEA Ignores####
+##################
+*.iml
+*.ipr
+*.iws
+.idea/
