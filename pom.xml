@@ -4,7 +4,7 @@
     <parent>
         <groupId>org.jenkins-ci.plugins</groupId>
         <artifactId>plugin</artifactId>
-        <version>1.498</version>
+        <version>1.528</version>
     </parent>
 
   <artifactId>ci-game</artifactId>
@@ -133,7 +133,7 @@
     <dependency>
       <groupId>org.jvnet.hudson.plugins</groupId>
       <artifactId>analysis-core</artifactId>
-      <version>1.9</version>
+      <version>1.52</version>
     </dependency>
     <dependency>
       <groupId>org.jvnet.hudson.plugins</groupId>
